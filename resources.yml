@@ -1,5 +1,5 @@
 resources:
-  - name: e2e-busybox-image
+  - name: input-image
     type: image
     integration: dockerhub
     source:
@@ -7,7 +7,7 @@ resources:
       isPull: true
       tag: latest
       
-  - name: busybox1
+  - name: output-image
     type: image
     integration: dockerhub
     source:
