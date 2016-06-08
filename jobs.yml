@@ -4,11 +4,11 @@ jobs:
     steps:
       - GET input-image
       - PUT output-image
+      - PUT output2-image
   
   - name: e2e-job2
     type: manifest
     steps:
       - GET output-image
       - PUT output2-image
-      - PUT input-image
  
