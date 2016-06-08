@@ -10,4 +10,5 @@ jobs:
     steps:
       - GET output-image
       - PUT output2-image
+      - PUT input-image
  
