@@ -9,6 +9,8 @@ jobs:
   - name: e2e-job2
     type: manifest
     steps:
+      - GET input-image
+      - GET input2-image
       - GET output-image
       - PUT output2-image
  
