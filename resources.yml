@@ -7,14 +7,6 @@ resources:
       isPull: true
       tag: latest
       
-  - name: input2-image
-    type: image
-    integration: dockerhub
-    source:
-      name: "library/busybox"
-      isPull: true
-      tag: latest
-      
   - name: output-image
     type: image
     integration: dockerhub
@@ -23,10 +15,3 @@ resources:
       isPull: true
       tag: latest
   
-  - name: output2-image
-    type: image
-    integration: dockerhub
-    source:
-      name: "library/busybox"
-      isPull: true
-      tag: latest
