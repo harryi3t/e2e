@@ -1,25 +1,13 @@
 jobs:
-  - name: e2e-job
+  - name: job1
     type: manifest
     steps:
       - GET input-image
       - PUT output-image
-      - PUT output2-image
   
-  - name: e2e-job2
+  - name: job2
     type: manifest
     steps:
-      - GET input-image
-      - GET input2-image
-      - GET output-image
+      - GET job1
       - PUT output2-image
-  
-  - name: e2e-job3
-    type: manifest
-    steps:
-      - GET e2e-job
-      - GET input-image
-      - GET input2-image
-      - GET output-image
-      - PUT output2-image
- 
+
