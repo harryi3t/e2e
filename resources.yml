@@ -32,10 +32,3 @@ resources:
       isPull: true
       tag: latest
   
-  - name: long-image-name-to-be-truncated
-    type: image
-    integration: dockerhub
-    source:
-      name: "library/busybox"
-      isPull: true
-      tag: latest
