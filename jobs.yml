@@ -1,6 +1,32 @@
 jobs:
-  - name: e2e-job1
+  - name: dv-man
     type: manifest
     steps:
-      - PUT: output-image
-      - GET: input-image
+      - GET: dv-image
+      - GET: dv-opts
+      - GET: dv-params
+
+  - name: dv-test
+    type: ecsDeploy
+    steps:
+      - GET: dv-man
+      - GET: env-test
+
+  - name: box-man
+    type: manifest
+    steps:
+      - GET: box-image
+      - GET: box-opts
+      - GET: box-params
+
+  - name: box-test
+    type: ecsDeploy
+    steps:
+      - GET: box-man
+      - GET: env-test
+
+  - name: box-prod
+    type: ecsDeploy
+    steps:
+      - GET: box-man
+      - GET: env-prod
