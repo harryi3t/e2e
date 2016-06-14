@@ -4,3 +4,9 @@ jobs:
     steps:
       - PUT: output-image-long-length
       - GET: input-image-long-length
+  
+  - name: e2e-job1-very-very-long-length
+    type: manifest
+    steps:
+      - PUT: output-image-long-length
+      - GET: input-image-long-length
