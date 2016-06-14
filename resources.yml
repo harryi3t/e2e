@@ -1,5 +1,5 @@
 resources:
-  - name: input-image
+  - name: input-image-long-length
     type: image
     integration: dockerhub
     source:
@@ -16,7 +16,7 @@ resources:
       tag: latest
       
   
-  - name: output-image
+  - name: output-image-long-length
     type: image
     integration: dockerhub
     source:
