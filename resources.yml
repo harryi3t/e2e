@@ -32,3 +32,10 @@ resources:
       isPull: true
       tag: latest
   
+  - name: sample
+    type: gitRepo
+    integration: git
+    source:
+      name: "harryi3t/sample"
+      branch: "master"
+  
