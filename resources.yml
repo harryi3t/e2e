@@ -65,9 +65,4 @@ resources:
     source:
       count: 1
       
-  - name: sample
-    type: gitRepo
-    integration: git
-    source:
-      name: "harryi3t/sample"
-      branch: "master"
+
